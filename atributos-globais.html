@@ -1,0 +1,28 @@
+<!-- Atributos globais mais utilizados nas tags HTML
+    - class -> aplicar estilo CSS para classificar o(s) conteúdo(s) e acessar no JavaScript. Pode repetir o mesmo nome para várias classes.
+    - contenteditable -> permite que possa editar o conteúdo. Quando salva a página, perde-se a modificação.
+    - data-* -> após o -, poderemos colocar qualquer nome desde que seja data-destaforma data-desta-forma (separado por -). É um atributo global que é muito utilizado no JS e no CSS.
+    - hidden -> esconder uma tag
+    - id -> pode-se utilizar um Id com o mesmo nome por página (boa prática). Não é recomendado o mesmo nome para vários ID's.
+    - style -> aplicar estilização no HTML. Normalmente não utilizaremos esta tag direramente no HTML. Para isso, criaremos um arquivo externo CSS que irá trabalhar com a formatação no HTML interagindo via ID's e classes.
+    - tabindex -> É interessante para quem está sem acesso ao mouse e precisamos ordenar a seleção dos elementos quando a tecla tab for pressionada.
+    - title -> define um rótulo com um título quando o mouse estiver por cima do elemento.
+-->
+
+<div class="carrinho" contenteditable="true" id="cart1" tabindex="2">
+    <!-- Elementos aqui dentro-->
+    conteúdo
+</div>
+
+<div class="carrinho" data-id="" id="cart2" style="color: blueviolet" tabindex="1" title="o mouse está por cima">
+    <!-- Elementos aqui dentro-->
+    conteúdo
+</div>
+
+<div class="carrinho" hidden tabindex="3">
+    <!-- Elementos aqui dentro-->
+    conteúdo
+</div>
+
+Para mais informações sobre Atributos Globais, a Mozilla disponibiliza a documentação
+<a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Global_attributes">aqui</a>.
